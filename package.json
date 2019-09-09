@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/webpack-dev-server",
     "build": "webpack --config=webpack.config.js"
   },
   "repository": {
@@ -16,14 +17,14 @@
   "homepage": "https://bitbucket.org/duplexascensores/lit-header-menu#readme",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "@webpack-cli/serve": "^0.1.8",
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "babel-loader": "^8.0.6",
-    "babel-preset-env": "^1.7.0",
+    "@babel/preset-env": "^7.1.0",
     "html-webpack-plugin": "^3.2.0",
+    "@webpack-cli/serve": "^0.1.8",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
