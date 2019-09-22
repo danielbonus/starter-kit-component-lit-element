@@ -11,16 +11,18 @@ const webpackInit = {
     extensions: ['.js']
   },
   entry: {
-    app: ['./component.js']
+    app: ['./appShell.js']
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [{
-          loader: 'babel-loader'
-        }]
+        loader: 'babel-loader',
+        include: [
+          path.join(__dirname, '../src'), // + any other paths that need to be transpiled
+          /\/node_modules\/quill/,
+        ]
       }
     ]
   },
