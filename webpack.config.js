@@ -18,11 +18,11 @@ const webpackInit = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+       /*  loader: 'babel-loader',
         include: [
           path.join(__dirname, '../src'), // + any other paths that need to be transpiled
           /\/node_modules\/quill/,
-        ]
+        ] */
       }
     ]
   },

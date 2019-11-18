@@ -6,13 +6,7 @@
   "scripts": {
     "test": "karma start --coverage",
     "start": "node_modules/.bin/webpack-dev-server",
-    "build": "webpack --config=webpack.config.js",
-    "test:watch": "karma start --auto-watch=true --single-run=false",
-    "test:update-snapshots": "karma start --update-snapshots",
-    "test:prune-snapshots": "karma start --prune-snapshots",
-    "test:compatibility": "karma start --compatibility all --coverage",
-    "test:compatibility:watch": "karma start --compatibility all --auto-watch=true --single-run=false",
-    "test:bs": "karma start karma.bs.config.js --compatibility all --coverage"
+    "build": "webpack --config=webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -26,17 +20,11 @@
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "babel-loader": "^8.0.6",
-    "@babel/preset-env": "^7.1.0",
     "html-webpack-plugin": "^3.2.0",
     "@webpack-cli/serve": "^0.1.8",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0",
-    "@open-wc/testing-karma": "^3.0.0",
-    "webpack-merge": "^4.1.5",
-    "@open-wc/testing-karma-bs": "^1.0.0",
-    "@open-wc/testing": "^2.0.0"
+    "webpack-merge": "^4.1.5"
   }
 }

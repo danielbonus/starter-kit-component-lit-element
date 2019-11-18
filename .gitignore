@@ -1,10 +1,20 @@
-bower_components*
-bower-*.json
-components
-node_modules
+## editors
+/.idea
+/.vscode
+
+## system files
 .DS_Store
 
-# cellsjs validator
+## npm
+/node_modules/
+/npm-debug.log
 
-cells.log
-coverage*
+## testing
+/coverage/
+
+## temp folders
+/.tmp/
+
+# build
+/_site/
+/dist/
