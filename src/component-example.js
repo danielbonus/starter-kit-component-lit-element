@@ -21,6 +21,8 @@ class Component  extends LitElement {
   render() {
     return html`
       <h1>Example complement</h1>
+
+
     `;
   }
 }

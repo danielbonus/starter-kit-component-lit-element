@@ -1,9 +1,8 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
-const indexOutput = 'indexOutput.html'
 const basePath = __dirname;
-const distPath = 'demo';
+const distPath = 'dist';
 
 const webpackInit = {
   mode: 'development',

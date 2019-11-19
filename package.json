@@ -4,11 +4,12 @@
   "description": "component header litElement",
   "main": "index.js",
   "scripts": {
-    "test": "karma start --coverage",
     "start": "node_modules/.bin/webpack-dev-server",
     "build": "webpack --config=webpack.config.js",
     "cypress:web": "./node_modules/.bin/cypress open",
-    "cypress:terminal": "npx cypress run"
+    "cypress:terminal": "npx cypress run",
+    "storybook": "start-storybook -p 9006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,30 @@
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^3.2.0",
+    "@storybook/addon-actions": "5.3.0-beta.2",
+    "@storybook/addon-backgrounds": "5.3.0-beta.2",
+    "@storybook/addon-centered": "5.3.0-beta.2",
+    "@storybook/addon-docs": "5.3.0-beta.2",
+    "@storybook/addon-events": "5.3.0-beta.2",
+    "@storybook/addon-knobs": "5.3.0-beta.2",
+    "@storybook/addon-links": "5.3.0-beta.2",
+    "@storybook/addon-storyshots": "5.3.0-beta.2",
+    "@storybook/addon-storysource": "5.3.0-beta.2",
+    "@storybook/addon-viewport": "5.3.0-beta.2",
+    "@storybook/addons": "5.3.0-beta.2",
+    "@storybook/client-api": "5.3.0-beta.2",
+    "@storybook/core": "5.3.0-beta.2",
+    "@storybook/core-events": "5.3.0-beta.2",
+    "@storybook/source-loader": "5.3.0-beta.2",
+    "@storybook/web-components": "5.3.0-beta.2",
     "@webpack-cli/serve": "^0.1.8",
+    "babel-loader": "^8.0.6",
+    "cypress": "^3.6.1",
+    "cypress-shadow-dom": "^1.1.1",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0",
-    "webpack-merge": "^4.1.5",
-    "cypress": "^3.6.1",
-    "cypress-shadow-dom": "^1.1.1"
+    "webpack-merge": "^4.1.5"
   }
 }
