@@ -6,7 +6,9 @@
   "scripts": {
     "test": "karma start --coverage",
     "start": "node_modules/.bin/webpack-dev-server",
-    "build": "webpack --config=webpack.config.js"
+    "build": "webpack --config=webpack.config.js",
+    "cypress:web": "./node_modules/.bin/cypress open",
+    "cypress:terminal": "npx cypress run"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,8 @@
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0",
-    "webpack-merge": "^4.1.5"
+    "webpack-merge": "^4.1.5",
+    "cypress": "^3.6.1",
+    "cypress-shadow-dom": "^1.1.1"
   }
 }
