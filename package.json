@@ -1,7 +1,7 @@
 {
-  "name": "lit-header-menu",
+  "name": "starter-kit-component-lit-element",
   "version": "1.0.0",
-  "description": "component header litElement",
+  "description": "component started component ",
   "main": "index.js",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/duplexascensores/lit-header-menu.git"
+    "url": "git+ssh://git@bitbucket.org/duplexascensores/starter-kit-component-lit-element.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/duplexascensores/lit-header-menu#readme",
+  "homepage": "https://bitbucket.org/duplexascensores/starter-kit-component-lit-element#readme",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "lit-element": "^2.2.1"
